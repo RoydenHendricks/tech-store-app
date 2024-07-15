@@ -1,0 +1,36 @@
+.register-container {
+  position: absolute;
+  text-align: center;
+  margin-left: 200px;
+  margin-top: 40px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#username,
+#password,
+#email,
+#firstName,
+#Surname {
+  height: 30px;
+  width: 300px;
+  padding-left: 20px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.register-btn {
+  background: linear-gradient(to right, rgb(140, 0, 255), rgb(134, 82, 218));
+  padding: 10px;
+  color: #fff;
+  width: 200px;
+  margin-top: 10px;
+  border: 1px solid black;
+  border-radius: 20px;
+}
+
+.register-btn:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}

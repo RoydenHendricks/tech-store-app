@@ -1,0 +1,29 @@
+.login-or-register {
+  cursor: pointer;
+  margin-top: 40px;
+  margin-left: 400px;
+  display: flex;
+  justify-content: center;
+  column-gap: 2rem;
+  text-align: center;
+}
+
+.login-header .login-header:hover,
+.register-header:hover {
+  color: aliceblue;
+}
+
+.custom-image {
+  object-fit: cover;
+  display: block;
+}
+
+.image-section {
+  position: fixed;
+  margin-left: 20px;
+  top: 0;
+  width: 450px;
+  height: 100vh;
+  background: url("/src/images/camera2.jpg") center;
+  background-size: cover;
+}

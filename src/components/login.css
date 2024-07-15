@@ -1,0 +1,50 @@
+.login-page-container {
+  padding-top: 50px;
+  background-size: cover;
+  height: calc(100vh - 50px);
+}
+
+.login-container {
+  text-align: center;
+  margin-top: 60px;
+  width: 500px;
+  height: 300px;
+  margin-left: 200px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.field {
+  margin-top: 20px;
+  height: 50px;
+}
+
+#username,
+#password,
+#email,
+#firstName,
+#Surname {
+  background-color: #f1f1f1;
+  height: 30px;
+  width: 300px;
+  padding-left: 20px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.login-btn {
+  background: linear-gradient(to right, rgb(140, 0, 255), rgb(134, 82, 218));
+  padding: 10px;
+  color: #fff;
+  width: 200px;
+  margin-top: 10px;
+  border: 1px solid black;
+  border-radius: 20px;
+}
+
+.login-btn:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
