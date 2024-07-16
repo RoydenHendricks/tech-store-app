@@ -2,7 +2,7 @@
   padding-top: 50px;
   background-image: url("/src/images/controller.jpg");
   background-size: cover;
-  height: calc(100vh - 50px);
+  height: 100vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -23,11 +23,12 @@
 }
 
 .home-login-btn {
-  background: linear-gradient(to right, rgb(140, 0, 255), rgb(134, 82, 218));
-  border: 1px solid black;
+  margin-top: 10px;
+  background: linear-gradient(to right, rgb(140, 0, 255), rgb(128, 70, 221));
+  border: none;
   color: #fff;
   font-size: 20px;
-  padding: 20px;
+  padding: 10px;
   width: 200px;
   border-radius: 10px;
 }

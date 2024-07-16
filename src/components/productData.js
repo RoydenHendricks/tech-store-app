@@ -49,15 +49,15 @@ const products = [
   {
     id: 6,
     img: product6,
-    title: "Seagate Expansion Desktop Hard Drive 10 TB Black",
-    text: "Drag and drop file saving , USB powered , Built-in power management",
+    title: "Seagate Expansion Desktop Hard Drive ",
+    text: "Drag and drop file saving , Built-in power management",
     price: "R 5,499",
   },
   {
     id: 7,
     img: product7,
     title: "TP-Link  Modem Router",
-    text: "Four antennas for faster AC WI-FI , Superior coverage , Versatile connectivity",
+    text: "Four antennas for faster AC WI-FI , Superior coverage",
     price: "R 1,599",
   },
   {
