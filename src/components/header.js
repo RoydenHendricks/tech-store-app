@@ -8,6 +8,8 @@ const Header = () => {
   const currentUser = useSelector(selectCurrentUser);
 
   const location = useLocation();
+
+  //  function that will change the color of the navbar based on the page that is clicked
   const getBackgroundColor = () => {
     switch (location.pathname) {
       case "/":
@@ -43,6 +45,9 @@ const Header = () => {
           <Link className="links" to="/cart">
             Cart
           </Link>
+
+          {/* If there i a user logged in display the username  */}
+          {/* Otherwise display Guest */}
 
           {currentUser ? (
             <span className="current-user">{currentUser.username}</span>

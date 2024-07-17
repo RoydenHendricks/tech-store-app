@@ -1,5 +1,6 @@
 .cart-section {
   margin-top: 100px;
+
   padding: 30px;
   height: auto;
   display: flex;
@@ -74,4 +75,96 @@
 .cart-buttons:hover {
   background-color: #b9b9b9;
   cursor: pointer;
+}
+
+/* ----------------------------------------- Shipping Section ---------------------------------- */
+
+.shipping-header {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.ship-img {
+  width: 120px;
+  height: 40px;
+}
+
+.shipping-section {
+  border-top: 1px solid black;
+  padding: 30px;
+  margin-top: 60px;
+  text-align: center;
+}
+
+.shipping-container {
+  padding: 20px;
+  width: 500px;
+  height: 100px;
+  background-color: rgb(253, 253, 253);
+  box-shadow: 0px 3px 10px rgb(117, 117, 117);
+  display: flex;
+  align-items: center;
+  text-align: left;
+  justify-content: space-between;
+
+  margin-bottom: 10px;
+}
+
+.shipping-text {
+  margin-left: 20px;
+  flex: 1;
+}
+
+.shipping-btn {
+  width: 100px;
+  padding: 5px;
+  border-radius: 3px;
+  background-color: #fff;
+}
+
+.shipping-btn:hover {
+  background-color: black;
+  color: #fff;
+}
+
+#info-icon {
+  font-size: 30px;
+  margin-top: 8px;
+  margin-left: 60px;
+}
+
+#info-icon:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .cart-item {
+    width: 450px;
+  }
+
+  .cart-img {
+    width: 100px;
+    height: fit-content;
+  }
+
+  .cart-item-heading {
+    font-size: 16px;
+  }
+
+  /* ---------------- shipping section --------------------- */
+
+  .shipping-container {
+    width: 400px;
+  }
+
+  .shipping-btn {
+    width: 80px;
+  }
+
+  .ship-img {
+    width: 80px;
+    height: 40px;
+  }
 }

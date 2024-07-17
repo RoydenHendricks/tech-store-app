@@ -62,3 +62,25 @@
   transform: translateY(-5px);
   color: #707070;
 }
+
+@media (max-width: 768px) {
+  .text-container {
+    width: 400px;
+  }
+}
+
+@media (max-width: 986px) {
+  .text-container {
+    width: 300px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .text-container {
+    width: 550px;
+  }
+
+  .sub-text {
+    font-size: 25px;
+  }
+}

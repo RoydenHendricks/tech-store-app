@@ -8,7 +8,9 @@ const Home = () => {
     <div className="home-section">
       <div className="text-container">
         <h1 className="home-heading">Crafting the Future of Tech</h1>
-        <h2 style={{ color: "grey" }}>Login to explore more features</h2>
+        <h2 className="sub-text" style={{ color: "grey" }}>
+          Login to explore more features
+        </h2>
 
         <Link to="/loginPage" className="login-link">
           <button className="home-login-btn">Login</button>

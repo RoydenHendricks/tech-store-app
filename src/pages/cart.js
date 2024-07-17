@@ -1,4 +1,7 @@
 import React from "react";
+import shipping1 from "../images/shipping1.png";
+import shipping2 from "../images/shipping2.png";
+import HelpButton from "../components/helpButton";
 
 import { useSelector } from "react-redux";
 import {
@@ -66,6 +69,25 @@ const Cart = () => {
         ))}
       </div>
       <p>Total Price: R{totalPrice}</p>
+
+      <div className="shipping-section">
+        <div className="shipping-header">
+          <h2 style={{ marginBottom: "50px" }}> Select Shipping </h2>
+
+          <HelpButton />
+        </div>
+
+        <div className="shipping-container">
+          <img className="ship-img" src={shipping2} alt="shipping-1" />
+          <p className="shipping-text"> Free</p>
+          <button className="shipping-btn">select</button>
+        </div>
+        <div className="shipping-container">
+          <img className="ship-img" src={shipping1} alt="shipping-2" />
+          <p className="shipping-text"> R200 delivery fee</p>
+          <button className="shipping-btn">select</button>
+        </div>
+      </div>
     </div>
   );
 };

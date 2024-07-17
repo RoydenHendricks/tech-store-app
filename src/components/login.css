@@ -1,19 +1,6 @@
-.login-page-container {
-  padding-top: 50px;
-  background-size: cover;
-  height: calc(100vh - 50px);
-}
-
 .login-container {
   text-align: center;
-  margin-top: 60px;
-  width: 500px;
   height: 300px;
-  margin-left: 200px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 
 .field {
@@ -35,16 +22,17 @@
 }
 
 .login-btn {
-  background: linear-gradient(to right, rgb(140, 0, 255), rgb(134, 82, 218));
+  background-color: rgb(224, 224, 224);
   padding: 10px;
-  color: #fff;
-  width: 200px;
+  width: 300px;
+  color: rgb(148, 59, 231);
   margin-top: 10px;
-  border: 1px solid black;
-  border-radius: 20px;
+  border: 2px solid rgb(148, 59, 231);
+  border-radius: 10px;
 }
 
 .login-btn:hover {
   cursor: pointer;
-  opacity: 0.8;
+  background-color: rgb(148, 59, 231);
+  color: #fff;
 }

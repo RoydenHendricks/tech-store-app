@@ -1,0 +1,57 @@
+.help-container {
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.514);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.help-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  width: 550px;
+  height: 600px;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.instructions {
+  margin-top: 30px;
+  padding-left: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+}
+
+.help-button {
+  background-color: #fdae6c;
+  margin-top: 30px;
+  padding: 10px;
+  width: 100px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.5s all;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.help-button:hover {
+  transform: translateY(-5px);
+  background-color: #ca752f;
+}
+
+@media (max-width: 576px) {
+  .help-content {
+    width: 400px;
+  }
+}

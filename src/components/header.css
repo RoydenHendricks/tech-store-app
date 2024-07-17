@@ -52,3 +52,33 @@
   font-weight: 600;
   font-size: 30px;
 }
+
+/* -------------------- responsiveness ----------------- */
+
+@media (max-width: 992px) {
+  .navbar-links {
+    column-gap: 2rem;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+@media (max-width: 576px) {
+  .store-name {
+    display: none;
+  }
+
+  .navbar-links {
+    column-gap: 10px;
+    justify-content: center;
+    column-gap: 60px;
+  }
+
+  .nav-links a {
+    font-size: 16px;
+  }
+
+  .current-user {
+    font-size: 14px;
+  }
+}

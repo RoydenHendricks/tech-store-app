@@ -1,11 +1,5 @@
 .register-container {
-  position: absolute;
   text-align: center;
-  margin-left: 200px;
-  margin-top: 40px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 
 #username,
@@ -21,16 +15,17 @@
 }
 
 .register-btn {
-  background: linear-gradient(to right, rgb(140, 0, 255), rgb(134, 82, 218));
+  background-color: rgb(224, 224, 224);
   padding: 10px;
-  color: #fff;
+  color: rgb(148, 59, 231);
   width: 200px;
-  margin-top: 10px;
-  border: 1px solid black;
-  border-radius: 20px;
+  width: 300px;
+  border: 2px solid rgb(148, 59, 231);
+  border-radius: 10px;
 }
 
 .register-btn:hover {
   cursor: pointer;
-  opacity: 0.8;
+  background-color: rgb(148, 59, 231);
+  color: #fff;
 }

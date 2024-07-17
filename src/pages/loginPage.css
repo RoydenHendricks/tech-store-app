@@ -1,7 +1,38 @@
+.login-page-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex-wrap: wrap;
+  padding-top: 50px;
+
+  background-size: cover;
+  height: calc(100vh - 50px);
+}
+
+.login-text-section {
+  background-color: rgb(224, 224, 224);
+
+  width: 450px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-text-container {
+  flex: 1;
+}
+
 .login-or-register {
+  width: 700px;
+
+  width: fit-content;
   cursor: pointer;
-  margin-top: 40px;
-  margin-left: 400px;
+  margin-top: 30px;
+  margin-bottom: 20px;
   display: flex;
   justify-content: center;
   column-gap: 2rem;
@@ -13,17 +44,51 @@
   color: aliceblue;
 }
 
-.custom-image {
-  object-fit: cover;
-  display: block;
+.login-header,
+.register-header {
+  font-size: 30px;
 }
 
-.image-section {
-  position: fixed;
-  margin-left: 20px;
-  top: 0;
-  width: 450px;
-  height: 100vh;
-  background: url("/src/images/camera2.jpg") center;
-  background-size: cover;
+.logo-img {
+  height: 500px;
+  width: fit-content;
+}
+
+/* --------------------------- Responsiveness ----------------------- */
+
+@media (max-width: 576px) {
+  .logo-img {
+    display: none;
+  }
+
+  .login-text-section {
+    width: 400px;
+  }
+
+  .login-or-register {
+    width: 400px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .logo-img {
+    height: 400px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .logo-img {
+    display: none;
+  }
+
+  .login-text-section {
+    height: 550px;
+    border-radius: 20px;
+  }
+}
+
+@media (max-width: 900px) {
+  .logo-img {
+    display: none;
+  }
 }
