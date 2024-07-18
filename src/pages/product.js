@@ -8,6 +8,7 @@ const Product = () => {
   return (
     <div>
       <div className="product-section">
+        {/* the product array is mapped over to create a ProductCard for each individual product */}
         {products.map((product) => (
           <ProductCard key={product.id} product={product} />
         ))}

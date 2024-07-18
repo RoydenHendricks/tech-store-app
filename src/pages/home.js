@@ -12,6 +12,8 @@ const Home = () => {
           Login to explore more features
         </h2>
 
+        {/* login button that will take you to the login page */}
+
         <Link to="/loginPage" className="login-link">
           <button className="home-login-btn">Login</button>
         </Link>

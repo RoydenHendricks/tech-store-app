@@ -5,6 +5,7 @@ import { selectCurrentUser } from "../slices/loginSlice";
 import "./header.css";
 
 const Header = () => {
+  // current user that is logged in
   const currentUser = useSelector(selectCurrentUser);
 
   const location = useLocation();

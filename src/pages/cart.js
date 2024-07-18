@@ -12,7 +12,9 @@ import {
 import "./cart.css";
 import { useDispatch } from "react-redux";
 const Cart = () => {
+  // accessing the items from the cart slice
   const items = useSelector((state) => state.cart.items);
+  // accessing the total price from the cart slice
   const totalPrice = useSelector((state) => state.cart.totalPrice);
   const dispatch = useDispatch();
 
@@ -69,6 +71,8 @@ const Cart = () => {
         ))}
       </div>
       <p>Total Price: R{totalPrice}</p>
+
+      {/* ----------------------------- shipping section ----------------------------------- */}
 
       <div className="shipping-section">
         <div className="shipping-header">

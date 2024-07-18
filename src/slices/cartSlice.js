@@ -12,9 +12,12 @@ export const cartSlice = createSlice({
   initialState,
   reducers: {
     addItem: (state, action) => {
+      // new item is equal to the users input
       const newItem = action.payload;
 
+      // Looking through the items array to see if the item was already added to the cart
       const existingItem = state.items.find((item) => item.id === newItem.id);
+      // if the item does not exist push the values to the items array
       if (!existingItem) {
         state.items.push({
           id: newItem.id,
@@ -24,9 +27,12 @@ export const cartSlice = createSlice({
           quantity: 1,
         });
       } else {
+        // increase the quantity of the item if the item is already in the items array
         existingItem.quantity++;
+        // the total price of the existing item is equal to the quantity multiplied by the price
         existingItem.totalPrice = existingItem.quantity * newItem.price;
       }
+      // adding the new item price to the total price
       state.totalPrice += newItem.price;
     },
 

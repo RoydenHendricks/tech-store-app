@@ -40,6 +40,8 @@ const Register = () => {
   });
 
   return (
+    // ------------------------------------ FirstName field ------------------------------------
+
     <div className="register-container">
       <form className="form" onSubmit={formik.handleSubmit}>
         <div className="field">
@@ -57,6 +59,8 @@ const Register = () => {
           </div>
         </div>
 
+        {/* ------------------------------- Surname field  ------------------------------- */}
+
         <div className="field">
           <input
             id="Surname"
@@ -72,7 +76,7 @@ const Register = () => {
           </div>
         </div>
 
-        {/* ----------------- firstName field ----------------- */}
+        {/* -------------------------------- username field ---------------------------- */}
 
         <div className="field">
           <input
@@ -89,7 +93,7 @@ const Register = () => {
           </div>
         </div>
 
-        {/* ----------------- Email field ----------------- */}
+        {/* ----------------------------------- Email field ---------------------------- */}
 
         <div className="field">
           <input

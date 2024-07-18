@@ -9,21 +9,25 @@ const ProductCard = ({ product }) => {
   const [selectedColor, setSelectedColor] = useState("Color");
   const dispatch = useDispatch();
 
+  // function that handles the selection of a color
   const handleSelect = (color) => {
     setSelectedColor(color);
   };
 
+  // function that handles the click event
   const handleBuy = () => {
     // Logging the product object to debug
     console.log("Product object:", product);
 
-    // Safely access and parse the price
+    // access and parse the price
     if (product && product.price) {
       const price = parseFloat(
         product.price.replace(/R\s?/, "").replace(/,/g, "")
       );
+      // dispatching the addItem action with the product details and the price
       dispatch(addItem({ ...product, price }));
     } else {
+      // throwing an error to the console if something went wrong
       console.error("Product or price is undefined", product);
     }
   };
