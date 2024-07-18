@@ -78,7 +78,7 @@ const products = [
     id: 10,
     img: product10,
     title: "Pioneer DDJ-FLX6-GT DJ Controller",
-    text: "4 Channel DJ controller , Jog weel: 206 mm , Sampler: 16slot x 4bank",
+    text: "4 Channel DJ controller , Jog wheel: 206 mm , Sampler: 16slot x 4bank",
     price: "R 16,999",
   },
 ];
